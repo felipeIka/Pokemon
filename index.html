@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="containerP">
+
+        <div class="formContainer" id="formContainer1">
+            <form class="formP" id="formP1">
+                <h2 id="titulo">Escolha seu Pokemon</h2>
+                <input type="text" id="pokemonName" placeholder="Enter Pokemon name"><br>
+                <button id="btn" onclick="fetchData(event)">CATCH</button><br>
+                <div class="info" style="display: none;">
+                </div> 
+            </form>
+        </div>
+
+        <form class="formD1">
+            <h2 id="titulo1">Pokemon</h2>
+            <ul class="barraHP">
+                <li class="linha"></li>
+                <li class="linha"></li>
+                <li class="linha"></li>
+                <li class="linha"></li>
+                <li class="linha"></li>
+                <li class="linha"></li>
+                <li class="linha"></li>
+                <li class="linha"></li>
+                <li class="linha"></li>
+                <li class="linha"></li>
+                <li class="linha"></li>
+                <li class="linha"></li>
+                <li class="linha"></li>
+                <li class="linha"></li>
+                <li class="linha"></li>
+                <p class="att">HP</p>
+            </ul>
+            <ul class="barraAtk">
+                <li class="linha"></li>
+                <li class="linha"></li>
+                <li class="linha"></li>
+                <li class="linha"></li>
+                <li class="linha"></li>
+                <li class="linha"></li>
+                <li class="linha"></li>
+                <li class="linha"></li>
+                <li class="linha"></li>
+                <li class="linha"></li>
+                <li class="linha"></li>
+                <li class="linha"></li>
+                <li class="linha"></li>
+                <li class="linha"></li>
+                <li class="linha"></li>
+                <p class="att">Attack</p>
+            </ul>
+            <ul class="barraDef">
+                <li class="linha"></li>
+                <li class="linha"></li>
+                <li class="linha"></li>
+                <li class="linha"></li>
+                <li class="linha"></li>
+                <li class="linha"></li>
+                <li class="linha"></li>
+                <li class="linha"></li>
+                <li class="linha"></li>
+                <li class="linha"></li>
+                <li class="linha"></li>
+                <li class="linha"></li>
+                <li class="linha"></li>
+                <li class="linha"></li>
+                <li class="linha"></li>
+                <p class="att">Defense</p>
+            </ul>
+            <ul class="barraSpAtk">
+                <li class="linha"></li>
+                <li class="linha"></li>
+                <li class="linha"></li>
+                <li class="linha"></li>
+                <li class="linha"></li>
+                <li class="linha"></li>
+                <li class="linha"></li>
+                <li class="linha"></li>
+                <li class="linha"></li>
+                <li class="linha"></li>
+                <li class="linha"></li>
+                <li class="linha"></li>
+                <li class="linha"></li>
+                <li class="linha"></li>
+                <li class="linha"></li>
+                <p class="att">Special <br> Attack</p>
+            </ul>
+            <ul class="barraSpDef">
+                <li class="linha"></li>
+                <li class="linha"></li>
+                <li class="linha"></li>
+                <li class="linha"></li>
+                <li class="linha"></li>
+                <li class="linha"></li>
+                <li class="linha"></li>
+                <li class="linha"></li>
+                <li class="linha"></li>
+                <li class="linha"></li>
+                <li class="linha"></li>
+                <li class="linha"></li>
+                <li class="linha"></li>
+                <li class="linha"></li>
+                <li class="linha"></li>
+                <p class="att">Special <br> Defense</p>
+            </ul>
+            <ul class="barraSpd">
+                <li class="linha"></li>
+                <li class="linha"></li>
+                <li class="linha"></li>
+                <li class="linha"></li>
+                <li class="linha"></li>
+                <li class="linha"></li>
+                <li class="linha"></li>
+                <li class="linha"></li>
+                <li class="linha"></li>
+                <li class="linha"></li>
+                <li class="linha"></li>
+                <li class="linha"></li>
+                <li class="linha"></li>
+                <li class="linha"></li>
+                <li class="linha"></li>
+                <p class="att">Speed</p>
+            </ul>
+
+        </form>
+
+        <div class="formContainer">
+            <form class="formP">
+                <h2 id="titulo">Escolha seu Pokemon</h2>
+                <input type="text" id="pokemonName2" placeholder="Enter Pokemon name"><br>
+                <button id="btn" onclick="fetchData2(event)">CATCH</button><br>
+                <div class="info2" style="display: none;">
+                </div>   
+            </form>
+        </div>
+
+            <form class="formD2">
+                <h2 id="titulo2">Pokemon</h2>
+                <ul class="barraHP">
+                    <li class="linha"></li>
+                    <li class="linha"></li>
+                    <li class="linha"></li>
+                    <li class="linha"></li>
+                    <li class="linha"></li>
+                    <li class="linha"></li>
+                    <li class="linha"></li>
+                    <li class="linha"></li>
+                    <li class="linha"></li>
+                    <li class="linha"></li>
+                    <li class="linha"></li>
+                    <li class="linha"></li>
+                    <li class="linha"></li>
+                    <li class="linha"></li>
+                    <li class="linha"></li>
+                    <p class="att">HP</p>
+                </ul>
+                <ul class="barraAtk">
+                    <li class="linha"></li>
+                    <li class="linha"></li>
+                    <li class="linha"></li>
+                    <li class="linha"></li>
+                    <li class="linha"></li>
+                    <li class="linha"></li>
+                    <li class="linha"></li>
+                    <li class="linha"></li>
+                    <li class="linha"></li>
+                    <li class="linha"></li>
+                    <li class="linha"></li>
+                    <li class="linha"></li>
+                    <li class="linha"></li>
+                    <li class="linha"></li>
+                    <li class="linha"></li>
+                    <p class="att">Attack</p>
+                </ul>
+                <ul class="barraDef">
+                    <li class="linha"></li>
+                    <li class="linha"></li>
+                    <li class="linha"></li>
+                    <li class="linha"></li>
+                    <li class="linha"></li>
+                    <li class="linha"></li>
+                    <li class="linha"></li>
+                    <li class="linha"></li>
+                    <li class="linha"></li>
+                    <li class="linha"></li>
+                    <li class="linha"></li>
+                    <li class="linha"></li>
+                    <li class="linha"></li>
+                    <li class="linha"></li>
+                    <li class="linha"></li>
+                    <p class="att">Defense</p>
+                </ul>
+                <ul class="barraSpAtk">
+                    <li class="linha"></li>
+                    <li class="linha"></li>
+                    <li class="linha"></li>
+                    <li class="linha"></li>
+                    <li class="linha"></li>
+                    <li class="linha"></li>
+                    <li class="linha"></li>
+                    <li class="linha"></li>
+                    <li class="linha"></li>
+                    <li class="linha"></li>
+                    <li class="linha"></li>
+                    <li class="linha"></li>
+                    <li class="linha"></li>
+                    <li class="linha"></li>
+                    <li class="linha"></li>
+                    <p class="att">Special <br> Attack</p>
+                </ul>
+                <ul class="barraSpDef">
+                    <li class="linha"></li>
+                    <li class="linha"></li>
+                    <li class="linha"></li>
+                    <li class="linha"></li>
+                    <li class="linha"></li>
+                    <li class="linha"></li>
+                    <li class="linha"></li>
+                    <li class="linha"></li>
+                    <li class="linha"></li>
+                    <li class="linha"></li>
+                    <li class="linha"></li>
+                    <li class="linha"></li>
+                    <li class="linha"></li>
+                    <li class="linha"></li>
+                    <li class="linha"></li>
+                    <p class="att">Special <br> Defense</p>
+                </ul>
+                <ul class="barraSpd">
+                    <li class="linha"></li>
+                    <li class="linha"></li>
+                    <li class="linha"></li>
+                    <li class="linha"></li>
+                    <li class="linha"></li>
+                    <li class="linha"></li>
+                    <li class="linha"></li>
+                    <li class="linha"></li>
+                    <li class="linha"></li>
+                    <li class="linha"></li>
+                    <li class="linha"></li>
+                    <li class="linha"></li>
+                    <li class="linha"></li>
+                    <li class="linha"></li>
+                    <li class="linha"></li>
+                    <p class="att">Speed</p>
+                </ul>
+            </form>
+        
+</div>
+    
+<div class="containerP">
+    <div class="formContainer">
+        <img id="imgP1" src="">
+        <form class="formP1">
+            <br>
+            <button id="btn" onclick="compare()">COMPARE</button><br>
+            <div class="info3" style="display: none;"> 
+            <div class="spanContainer">
+                <span class="nomeC">Ok</span>
+                <span class="nomeP"></span>
+                <span class="nomeC1">Ok</span> 
+            </div>
+            <div class="spanContainer">
+                <span class="nomeC">Ok</span>
+                <span class="nomeP"></span>
+                <span class="nomeC1">Ok</span> 
+            </div>
+            <div class="spanContainer">
+                <span class="nomeC">Ok</span>
+                <span class="nomeP"></span>
+                <span class="nomeC1">Ok</span> 
+            </div>
+            <div class="spanContainer">
+                <span class="nomeC">Ok</span>
+                <span class="nomeP"></span>
+                <span class="nomeC1">Ok</span> 
+            </div>
+            <div class="spanContainer">
+                <span class="nomeC">Ok</span>
+                <span class="nomeP"></span>
+                <span class="nomeC1">Ok</span> 
+            </div>
+            <div class="spanContainer">
+                <span class="nomeC">Ok</span>
+                <span class="nomeP"></span>
+                <span class="nomeC1">Ok</span>
+            </div>
+            </div>
+        </form>
+    </div>  
+</div>
+
+    <script src="index3.js"></script>
+</body>
+</html>
