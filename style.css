@@ -2,7 +2,79 @@ body{
     font-family: Arial, sans-serif;
     background-color: hsla(0, 0%, 50%, 0.4);
 }
-
+.containerP{
+    display: flex;
+    flex-direction: row;  
+}
+.formContainer {
+    display: flex;
+    height: fit-content;
+}
+.formP{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    background: linear-gradient(45deg, hsl(298, 100%, 35%), hsl(115, 100%, 39%));
+}
+.formP1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+    background: linear-gradient(45deg, orange, blue);
+    margin-left: 675px;
+    margin-top: 50px;
+}
+#titulo{
+    margin-bottom: 0;
+    margin-top: 10px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: hsla(30, 100%, 0%, 0.7);
+    background:  linear-gradient(45deg, blue, orange);
+    padding: 10px;
+    border: solid 3px;
+}
+#titulo1, #titulo2{
+    margin-bottom: 0;
+    margin-top: 0px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: hsla(30, 100%, 0%, 1);
+    background:  linear-gradient(45deg, blue, orange);
+    padding: 10px;
+    border: solid 3px;
+}
+#btn{
+    margin-top: 2px;
+    font-weight: bold;
+    background: linear-gradient(45deg, orange, blue);
+    color: hsla(0, 0%, 0%, 0.6);
+    border: solid 2px;
+    box-shadow: 2px 2px 2px 2px hsla(0, 0%, 0%, 0.7);
+    border-color: black;
+    align-self: center; 
+    padding: 10px;
+    font-size: 1.4rem;
+    cursor: pointer;  
+}
+.btn{
+    margin-top: 2px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    background: linear-gradient(45deg, yellow, green)   ;
+    color: hsla(0, 0%, 0%, 0.8  );
+    border: solid 2px;
+    border-radius: 40px;
+    box-shadow: 2px 2px 2px 2px hsla(0, 0%, 0%, 0.7);
+    border-color: black;
+    align-self: center; 
+    padding: 10px;
+    font-size: 1rem;
+    text-align: center;
+    cursor: pointer;
+}
 #pokemonName, #pokemonName2{
     font-size: 20px;
     font-weight: bold;
@@ -20,87 +92,6 @@ body{
 #pokemonName:focus, #pokemonName2:focus{
     outline:none;
 }
-
-.formP{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 500px;
-    background: linear-gradient(45deg, hsl(298, 100%, 35%), hsl(115, 100%, 39%));
-}
-
-.formP1{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 600px;
-    background: linear-gradient(45deg, orange, blue);
-    margin-left: 675px;
-    margin-top: 50px;
-}
-
-
-#titulo{
-    margin-bottom: 0;
-    margin-top: 10px;
-    font-size: 1.6rem;
-    font-weight: bold;
-    color: hsla(30, 100%, 0%, 0.7);
-    background:  linear-gradient(45deg, blue, orange);
-    padding: 10px;
-    border: solid 3px;
-    
-
-}
-
-#titulo1, #titulo2{
-    margin-bottom: 0;
-    margin-top: 0px;
-    font-size: 1.6rem;
-    font-weight: bold;
-    color: hsla(30, 100%, 0%, 1);
-    background:  linear-gradient(45deg, blue, orange);
-    padding: 10px;
-    border: solid 3px;
-    
-    
-
-}
-
-#btn{
-    margin-top: 2px;
-    font-weight: bold;
-    background: linear-gradient(45deg, orange, blue);
-    color: hsla(0, 0%, 0%, 0.6);
-    border: solid 2px;
-    box-shadow: 2px 2px 2px 2px hsla(0, 0%, 0%, 0.7);
-    border-color: black;
-    align-self: center; 
-    padding: 10px;
-    font-size: 1.4rem;
-    cursor: pointer;
-    
-}
-
-.btn{
-    margin-top: 2px;
-    margin-bottom: 10px;
-    font-weight: bold;
-    background: linear-gradient(45deg, yellow, green)   ;
-    color: hsla(0, 0%, 0%, 0.8  );
-    border: solid 2px;
-    border-radius: 40px;
-    box-shadow: 2px 2px 2px 2px hsla(0, 0%, 0%, 0.7);
-    border-color: black;
-    align-self: center; 
-    padding: 10px;
-    font-size: 1rem;
-    text-align: center;
-    cursor: pointer;
-   
-    
-}
-
 .info, .info2{
     background: linear-gradient(45deg, red, yellow);
     width: 90%;
@@ -125,18 +116,6 @@ body{
     animation-fill-mode: forwards; /* Mantém o estado final da animação */
     opacity: 0; /* Começa com a opacidade 0 para um efeito de fade-in */
 }
-
-@keyframes slideDown {
-    from {
-        transform: translateY(-100%); /* Inicia a partir do topo (fora da tela) */
-        opacity: 0; /* Começa com opacidade 0 */
-    }
-    to {
-        transform: translateY(0); /* Termina na posição original (no centro da tela) */
-        opacity: 1; /* Termina com opacidade 1 */
-    }
-}
-
 .nome, .altura, .id, .peso{
     text-align: center;
     margin-top: 10px;
@@ -149,24 +128,7 @@ body{
     border-radius: 20px;
     width: 300px;
     background: linear-gradient(45deg, hsla(308, 100%, 50%, 0.7), rgba(0, 247, 255, 0.7));
-
 }
-
-.nomeP{
-    text-align: center;
-    margin-top: 10px;
-    font-size: 1.6rem;
-    font-weight: bold;
-    padding: 5px;
-    color: white;
-    margin-bottom: 5px;
-    border: 3px solid hsla(0, 0%, 0%, 0.7);
-    border-radius: 20px;
-    width: 400px;
-    background: linear-gradient(45deg, hsla(308, 100%, 50%, 0.7), rgba(0, 247, 255, 0.7));
-   
-}
-
 .img{
     text-align: center;
     margin-top: 10px;
@@ -189,14 +151,6 @@ body{
     background: linear-gradient(45deg, hsla(308, 100%, 50%, 1), rgba(0, 247, 255, 1));
     height: 200px;
 }
-
-
-.formContainer {
-    display: flex;
-    height: fit-content;
-}
-
-
 .formD1{
     display: flex;
     flex-direction: row;
@@ -207,10 +161,8 @@ body{
     opacity: 0;
     transition: transform 0.5s cubic-bezier(0.1, 0.7, 1.0, 0.1), opacity 0.5s cubic-bezier(0.1, 0.7, 1.0, 0.1);
     transform: translateX(-100%);
-    pointer-events: none;
-    
+    pointer-events: none;  
 }
-
 .formD1.show{
     transform: translateX(0);
     display: flex;
@@ -224,7 +176,6 @@ body{
     pointer-events: auto;
     transition: transform 0.5s cubic-bezier(0.1, 0.7, 1.0, 0.1), opacity 0.5s cubic-bezier(0.1, 0.7, 1.0, 0.1);
 }
-
 .formD2{
     display: flex;
     flex-direction: row;
@@ -236,10 +187,8 @@ body{
     transition: transform 0.5s cubic-bezier(0.1, 0.7, 1.0, 0.1), opacity 0.5s cubic-bezier(0.1, 0.7, 1.0, 0.1);
     transform: translateX(0);
     pointer-events: none;
-    margin-top: 365px;
-    
+    margin-top: 365px;  
 }
-
 .formD2.show{
     transform: translateX(-160%);
     display: flex;
@@ -253,25 +202,14 @@ body{
     pointer-events: auto;
     transition: transform 0.5s cubic-bezier(0.1, 0.7, 1.0, 0.1), opacity 0.5s cubic-bezier(0.1, 0.7, 1.0, 0.1);
 }
-
-
-.containerP{
-    display: flex;
-    flex-direction: row;
-    
-}
-
-
 .barra, .barraHP, .barraAtk, .barraDef, .barraSpAtk, .barraSpDef, .barraSpd{
     background: linear-gradient(45deg, blue, orange);
     width: 500px;
     height: auto;
     margin-right: 10px;
     margin-left: 10px;
-    align-items: center; 
-   
+    align-items: center;   
 }
-
 .linha{
     border: 2px solid;
     width: 50px;
@@ -279,14 +217,8 @@ body{
     margin-bottom: 5px;
     margin-top: 5px;
     margin-left: -3px;
-    list-style-type: none;
-    
-    
-    
+    list-style-type: none;    
 }
-
-
-
 .att{
     text-align: left;
     font-weight: bold;
@@ -294,14 +226,11 @@ body{
     width: 50px;
     color: white;
 }
-
-
 .spanContainer {
     display: flex;
     flex-direction: row; 
     align-items: center;
 }
-
 .nomeC, .nomeC1{
     text-align: center;
     font-size: 2.2rem;
@@ -312,5 +241,44 @@ body{
     color: hsla(231, 100%, 50%, 0.7);
     margin-bottom: 5px;
     background: none;
-   
 }
+.nomeP{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: 5px;
+    color: white;
+    margin-bottom: 5px;
+    border: 3px solid hsla(0, 0%, 0%, 0.7);
+    border-radius: 20px;
+    width: 400px;
+    background: linear-gradient(45deg, hsla(308, 100%, 50%, 0.7), rgba(0, 247, 255, 0.7));  
+}
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%); /* Inicia a partir do topo (fora da tela) */
+        opacity: 0; /* Começa com opacidade 0 */
+    }
+    to {
+        transform: translateY(0); /* Termina na posição original (no centro da tela) */
+        opacity: 1; /* Termina com opacidade 1 */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
